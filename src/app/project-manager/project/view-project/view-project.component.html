@@ -1,0 +1,18 @@
+<div>
+    <div class="row">
+      <input type="text" class="form-control" id="project" [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange($event)">
+    </div>
+
+    <div class="row my-2">
+      <label class="p-2 col">Sort By:</label>
+      <button class="p-2 col btn btn-secondary" (click)="sortBy('startDate')">Start Date</button>
+      <button class="p-2 col btn btn-secondary" (click)="sortBy('endDate')">End Date</button>
+      <button class="p-2 col btn btn-secondary" (click)="sortBy('priority')">Priority</button>
+      <button class="p-2 col btn btn-secondary" (click)="sortBy('completed')">Completed</button>
+    </div>
+      
+    <div *ngFor="let project of filteredProjects">
+      <app-view-project-details [projectDetails]="project"></app-view-project-details>
+      <hr/>      
+    </div>
+</div>
