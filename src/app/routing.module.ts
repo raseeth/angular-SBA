@@ -4,15 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ROUTES } from './routes';
 
-const taskRoutes: Routes = [
-    { path:, component: AddTaskComponent },
-    { path:"add-task/:id", component: AddTaskComponent },
-    { path:"view-task", component: ViewTaskComponent },
-    { path:"add-project", component: ProjectComponent },
-    { path:"add-project/:id", component: ProjectComponent },
-    { path:"add-user", component: UserComponent },
-    { path:"add-user/:id", component: UserComponent },
-    { path:"", redirectTo: "view-task", pathMatch: "full" }
+const routes: Routes = [
+    { path:ROUTES.ADDPROJECT, component: ProjectComponent },
+    { path:ROUTES.ADDPROJECTID, component: ProjectComponent },
+    { path:ROUTES.ADDTASK, component: AddTaskComponent },
+    { path:ROUTES.ADDTASKID, component: AddTaskComponent },
+    { path:ROUTES.VIEWTASK, component: ViewTaskComponent },
+    { path:ROUTES.ADDUSER, component: UserComponent },
+    { path:ROUTES.ADDUSERID, component: UserComponent },
+    { path:ROUTES.ADDPROJECT, redirectTo: ROUTES.ADDPROJECT, pathMatch: "full" }
 ];
 
 @NgModule({
