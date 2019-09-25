@@ -1,10 +1,10 @@
 export class ROUTES {
     static BASE = "";
-    static ADDPROJECT = "add-project";
-    static ADDPROJECTID = "add-project/:id";
-    static ADDTASK = "add-task";
-    static ADDTASKID = "add-task/:id";
-    static VIEWTASK = "view-task";
-    static ADDUSER = "add-user";
-    static ADDUSERID = "add-user/:id";
+    static ADDPROJECT = "project-add";
+    static ADDPROJECTID = "project-add/:id";
+    static ADDTASK = "task-add";
+    static ADDTASKID = "task-add/:id";
+    static VIEWTASK = "task-view";
+    static ADDUSER = "user-add";
+    static ADDUSERID = "user-add/:id";
 }
