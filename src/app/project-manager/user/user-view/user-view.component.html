@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col">
+    <div class="row">
+      <input type="text" [(ngModel)]="userSearchTerm" (ngModelChange)="onSearchTermChange($event)" class="col-sm-4" placeholder="Search">
+      <label class="col-sm-1">Sort:</label>
+      <button class="btn btn-secondary col-sm-2" (click)="sortBy('firstName')">First name</button>
+      <button class="btn btn-secondary col-sm-2" (click)="sortBy('lastName')">Last name</button>
+      <button class="btn btn-secondary col-sm-2" (click)="sortBy('employeeId')">Id</button>
+    </div>
+    <hr>
+
+    <div *ngFor="let user of filteredUsers">
+      <app-user-view-details [userDetails]="user"></app-user-view-details>
+    </div>
+  </div>
+</div>

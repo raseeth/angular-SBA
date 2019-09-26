@@ -1,0 +1,10 @@
+<div class="container">
+   <div class="p-3">
+        <div class="list-group">
+            <input class="form-control mb-2" placeholder="Search" type="text" [(ngModel)]="searchTerm" (ngModelChange)="onSearchTermChange($event)">
+            <a *ngFor="let item of items" href="javascript:void(0)" (click)="onSelection(item)" class="list-group-item list-group-item-action">
+                {{item.description}}
+            </a>
+        </div>
+   </div>
+</div>

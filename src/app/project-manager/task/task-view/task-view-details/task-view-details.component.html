@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-sm-3 mx-5p">
+      <label class="row">Task</label>
+      <div class="row alert-info">
+          {{taskDetail?.name}}
+      </div>
+    </div>
+    <div class="col-sm-3 mx-5p">
+      <label class="row">Parent</label>
+      <div class="row alert-info">
+           {{taskDetail?.parentTask?.name}}
+      </div>
+    </div>
+    <div class="col-sm-1 mx-5p">
+      <label class="row">Priority</label>
+      <div class="row">
+          {{taskDetail?.priority}}
+      </div>
+    </div>
+    <div class="col-sm-1 mx-5p">
+      <label class="row">Start</label>
+      <div class="row">
+          {{taskDetail?.startDate | date: 'dd/MM/yyyy'}}
+      </div>
+    </div>
+    <div class="col-sm-1 mx-5p">
+      <label class="row">End</label>
+      <div class="row">
+          {{taskDetail?.endDate | date: 'dd/MM/yyyy'}}
+      </div>
+    </div>
+    <div class="col-sm-1 mx-5p" *ngIf="!taskDetail?.isCompleted">
+      <a class="mt-4 btn btn-secondary" [routerLink]="['/task-add', taskDetail?.id]">
+          Edit
+      </a>
+    </div>
+    <div class="col-sm-1 mx-5p" *ngIf="!taskDetail?.isCompleted">
+      <input class="mt-4 btn btn-secondary" type="button" (click)="endTask(taskDetail)" value="End Task">
+    </div>
+  </div>
