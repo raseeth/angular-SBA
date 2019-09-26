@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'underscore';
 import { ProjectDetailViewModel } from '../project-details.vm';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+
+import { ProjectService } from '../../service/project/project.service';
+import { ListenerService } from '../../service/listener/listener.service';
 
 @Component({
   selector: 'app-project-view',

@@ -1,17 +1,17 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddTaskComponent } from './task-add.component';
-import { TaskService } from 'src/app/project-manager/service/task/task.service';
-import { TasksModelBuilder } from 'src/app/project-manager/service/task/task-model.builder';
+import { TaskService } from '../../service/task/task.service';
+import { TasksModelBuilder } from '../../service/task/task-model.builder';
 import { of } from 'rxjs';
-import { ModalService } from 'src/app/project-manager/service/modal/modal.service';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
+import { ModalService } from '../../service/modal/modal.service';
+import { UserService } from '../../service/user/user.service';
+import { ProjectService } from '../../service/project/project.service';
 import { DatePipe } from '@angular/common';
 import { FormBuilder } from '@angular/forms';
-import { ProjectModelBuilder } from 'src/app/project-manager/service/project/project-model.builder';
-import { UsersModelBuilder } from 'src/app/project-manager/service/user/user-model.builder';
-import { ListModalComponent } from 'src/app/project-manager/list-modal/list-modal.component';
+import { ProjectModelBuilder } from '../../service/project/project-model.builder';
+import { UsersModelBuilder } from '../../service/user/user-model.builder';
+import { ListModalComponent } from '../../list-modal/list-modal.component';
 
 describe('AddTaskComponent', () => {
   let component: AddTaskComponent;

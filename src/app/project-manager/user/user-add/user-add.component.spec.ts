@@ -1,11 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AddUserComponent } from './user-add.component';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
+import { UserService } from '../../service/user/user.service';
 import { of } from 'rxjs';
-import { UsersModelBuilder } from 'src/app/project-manager/service/user/user-model.builder';
+import { UsersModelBuilder } from '../../service/user/user-model.builder';
 import { FormBuilder } from '@angular/forms';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+import { ListenerService } from '../../service/listener/listener.service';
 
 describe('AddUserComponent', () => {
   let component: AddUserComponent;

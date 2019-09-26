@@ -1,13 +1,13 @@
 import { AddProjectComponent } from './project-add.component';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
-import { UsersModelBuilder } from 'src/app/project-manager/service/user/user-model.builder';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+import { ProjectService } from '../../service/project/project.service';
+import { UserService } from '../../service/user/user.service';
+import { UsersModelBuilder } from '../../service/user/user-model.builder';
+import { ListenerService } from '../../service/listener/listener.service';
 import { of } from 'rxjs';
 import { FormBuilder } from '@angular/forms';
-import { ProjectModelBuilder } from 'src/app/project-manager/service/project/project-model.builder';
-import { ModalService } from 'src/app/project-manager/service/modal/modal.service';
-import { ListModalComponent } from 'src/app/project-manager/list-modal/list-modal.component';
+import { ProjectModelBuilder } from '../../service/project/project-model.builder';
+import { ModalService } from '../../service/modal/modal.service';
+import { ListModalComponent } from '../../list-modal/list-modal.component';
 import { DatePipe } from '@angular/common';
 
 describe('AddProjectComponent', () => {

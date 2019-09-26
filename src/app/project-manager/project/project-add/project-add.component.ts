@@ -1,14 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { ModalService } from 'src/app/project-manager/service/modal/modal.service';
-import { ListModalComponent } from 'src/app/project-manager/list-modal/list-modal.component';
-import { ListItemViewModel } from 'src/app/project-manager/list-modal/list-item.vm';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+import { ProjectService } from '../../service/project/project.service';
+import { ModalService } from '../../service/modal/modal.service';
+import { ListModalComponent } from '../../list-modal/list-modal.component';
+import { ListItemViewModel } from '../../list-modal/list-item.vm';
+import { UserService } from '../../service/user/user.service';
+import { ListenerService } from '../../service/listener/listener.service';
 import { ProjectDetailViewModel } from '../project-details.vm';
 import { DatePipe } from '@angular/common';
-import { UserDetailViewModel } from 'src/app/project-manager/user/user-details.vm';
+import { UserDetailViewModel } from '../../user/user-details.vm';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

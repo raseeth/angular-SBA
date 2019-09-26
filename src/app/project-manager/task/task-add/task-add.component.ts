@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { TaskDetailViewModel } from '../task-view/task-details.vm';
-import { TaskService } from 'src/app/project-manager/service/task/task.service';
+import { TaskService } from '../../service/task/task.service';
 import { ActivatedRoute } from '@angular/router';
-import { ModalService } from 'src/app/project-manager/service/modal/modal.service';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { UserDetailViewModel } from 'src/app/project-manager/user/user-details.vm';
-import { ProjectDetailViewModel } from 'src/app/project-manager/project/project-details.vm';
-import { ListModalComponent } from 'src/app/project-manager/list-modal/list-modal.component';
-import { ListItemViewModel } from 'src/app/project-manager/list-modal/list-item.vm';
+import { ModalService } from '../../service/modal/modal.service';
+import { UserService } from '../../service/user/user.service';
+import { ProjectService } from '../../service/project/project.service';
+import { UserDetailViewModel } from '../../user/user-details.vm';
+import { ProjectDetailViewModel } from '../../project/project-details.vm';
+import { ListModalComponent } from '../../list-modal/list-modal.component';
+import { ListItemViewModel } from '../../list-modal/list-item.vm';
 import { DatePipe } from '@angular/common';
 
 @Component({

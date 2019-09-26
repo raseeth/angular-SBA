@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../config/config.service';
-import { TaskDetailViewModel } from 'src/app/project-manager/task/task-view/task-details.vm';
+import { TaskDetailViewModel } from '../../task/task-view/task-details.vm';
 import { Observable } from 'rxjs';
 import { map, flatMap } from 'rxjs/operators';
 

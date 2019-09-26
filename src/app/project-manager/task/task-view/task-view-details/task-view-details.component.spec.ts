@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewTaskDetailsComponent } from './task-view-details.component';
 import { of } from 'rxjs';
-import { TasksModelBuilder } from 'src/app/project-manager/service/task/task-model.builder';
+import { TasksModelBuilder } from '../../service/task/task-model.builder';
 
 describe('ViewTaskDetailsComponent', () => {
   

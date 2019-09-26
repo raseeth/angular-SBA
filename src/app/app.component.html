@@ -1,37 +1,32 @@
 <div class="container">
   <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
+    <div class="col-sm-12">
       <h2>
-    Project Manager
+        Project Manager
       </h2>
     </div>
-    <div class="col-sm-2">
-    </div>
-  <div>
-    <br/>
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
-      <ul class="nav nav-tabs">
-        <li class="active"><a [routerLink]="['project-add']">Add Project</a></li>
-        <li><a [routerLink]="['task-add']">Add Task</a></li>
-        <li><a [routerLink]="['task-view']">View Task</a></li>
-        <li><a [routerLink]="['user-add']">Add user</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-2">
-    </div>
-  <div>
-  <div class="row">
-    <div class="col-sm-2">
-    </div>
-    <div class="col-sm-8">
-        <router-outlet></router-outlet>
-    </div>
-    <div class="col-sm-2">
-    </div>
-  <div>
-</div>
+    <div>
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="nav nav-tabs">
+            <li class="active">
+              <a [routerLink]="['project-add']">Add Project</a>
+            </li>
+            <li>
+              <a [routerLink]="['task-add']">Add Task</a>
+            </li>
+            <li>
+              <a [routerLink]="['task-view']">View Task</a>
+            </li>
+            <li>
+              <a [routerLink]="['user-add']">Add user</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="row">            
+            <div class="col-sm-12">
+              <router-outlet></router-outlet>
+            </div>
+            <div>
+            </div>

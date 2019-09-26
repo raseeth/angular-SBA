@@ -1,4 +1,4 @@
-import { ProjectDetailViewModel } from 'src/app/project-manager/project/project-details.vm';
+import { ProjectDetailViewModel } from '../../project/project-details.vm';
 
 export class ProjectModelBuilder {
     private projects: ProjectDetailViewModel[];

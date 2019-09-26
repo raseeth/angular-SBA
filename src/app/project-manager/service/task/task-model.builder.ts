@@ -1,4 +1,4 @@
-import { TaskDetailViewModel } from 'src/app/project-manager/task/task-view/task-details.vm';
+import { TaskDetailViewModel } from '../../task/task-view/task-details.vm';
 
 export class TasksModelBuilder {
     private tasks: TaskDetailViewModel[];

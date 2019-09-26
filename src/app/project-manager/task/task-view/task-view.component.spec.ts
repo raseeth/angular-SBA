@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewTaskComponent } from './task-view.component';
-import { ModalService } from 'src/app/project-manager/service/modal/modal.service';
-import { TaskService } from 'src/app/project-manager/service/task/task.service';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { ProjectModelBuilder } from 'src/app/project-manager/service/project/project-model.builder';
-import { TasksModelBuilder } from 'src/app/project-manager/service/task/task-model.builder';
-import { ListModalComponent } from 'src/app/project-manager/list-modal/list-modal.component';
+import { ModalService } from '../../service/modal/modal.service';
+import { TaskService } from '../../service/task/task.service';
+import { ProjectService } from '../../service/project/project.service';
+import { ProjectModelBuilder } from '../../service/project/project-model.builder';
+import { TasksModelBuilder } from '../../service/task/task-model.builder';
+import { ListModalComponent } from '../../list-modal/list-modal.component';
 import { of } from 'rxjs';
 
 describe('ViewTaskComponent', () => {

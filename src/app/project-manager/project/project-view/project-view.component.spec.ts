@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewProjectComponent } from './project-view.component';
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+import { ProjectService } from '../../service/project/project.service';
+import { ListenerService } from '../../service/listener/listener.service';
 import { of } from 'rxjs';
-import { ProjectModelBuilder } from 'src/app/project-manager/service/project/project-model.builder';
+import { ProjectModelBuilder } from '../../service/project/project-model.builder';
 import { componentNeedsResolution } from '@angular/core/src/metadata/resource_loading';
 
 describe('ViewProjectComponent', () => {

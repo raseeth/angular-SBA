@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserDetailViewModel } from '../user-details.vm';
 import * as _ from "underscore";
-import { UserService } from 'src/app/project-manager/service/user/user.service';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+import { UserService } from '../../service/user/user.service';
+import { ListenerService } from '../../service/listener/listener.service';
 
 @Component({
   selector: 'app-user-view',

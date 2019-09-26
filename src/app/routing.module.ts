@@ -4,10 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ROUTES } from './routes';
 
-import { AddTaskComponent } from 'src/app/project-manager/task/task-add/task-add.component';
-import { ViewTaskComponent } from 'src/app/project-manager/task/task-view/task-view.component';
-import { UserComponent } from 'src/app/project-manager/user/user.component';
-import { ProjectComponent } from 'src/app/project-manager/project/project.component';
+import { AddTaskComponent } from './project-manager/task/task-add/task-add.component';
+import { ViewTaskComponent } from './project-manager/task/task-view/task-view.component';
+import { UserComponent } from './project-manager/user/user.component';
+import { ProjectComponent } from './project-manager/project/project.component';
 
 const routes: Routes = [
     { path:ROUTES.ADDPROJECT, component: ProjectComponent },

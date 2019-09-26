@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, flatMap } from 'rxjs/operators';
 import { ConfigService } from '../config/config.service';
-import { UserDetailViewModel } from 'src/app/project-manager/user/user-details.vm';
+import { UserDetailViewModel } from '../../user/user-details.vm';
 
 @Injectable()
 export class UserService {

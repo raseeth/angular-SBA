@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalService } from 'src/app/project-manager/service/modal/modal.service';
-import { ListModalComponent } from 'src/app/project-manager/list-modal/list-modal.component';
-import { ListItemViewModel } from 'src/app/project-manager/list-modal/list-item.vm';
+import { ModalService } from '../../service/modal/modal.service';
+import { ListModalComponent } from '../../list-modal/list-modal.component';
+import { ListItemViewModel } from '../../list-modal/list-item.vm';
 import { TaskDetailViewModel } from './task-details.vm';
 import { TaskService } from '../../service/task/task.service';
 import * as _ from "underscore";
-import { ProjectService } from 'src/app/project-manager/service/project/project.service';
-import { ProjectDetailViewModel } from 'src/app/project-manager/project/project-details.vm';
+import { ProjectService } from '../../service/project/project.service';
+import { ProjectDetailViewModel } from '../../project/project-details.vm';
 
 @Component({
   selector: 'app-task-view',

@@ -1,4 +1,4 @@
-import { UserDetailViewModel } from 'src/app/project-manager/user/user-details.vm';
+import { UserDetailViewModel } from '../../user/user-details.vm';
 
 export class UsersModelBuilder {
     private users: UserDetailViewModel[];

@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { TaskDetailViewModel } from '../task-details.vm';
-import { TaskService } from 'src/app/project-manager/service/task/task.service';
+import { TaskService } from '../../../service/task/task.service';
 
 @Component({
   selector: 'app-task-view-details',

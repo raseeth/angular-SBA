@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../config/config.service';
 import { Observable } from 'rxjs';
-import { ProjectDetailViewModel } from 'src/app/project-manager/project/project-details.vm';
+import { ProjectDetailViewModel } from '../../project/project-details.vm';
 import { map, flatMap } from 'rxjs/operators';
 
 @Injectable({

@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
+import { UserService } from '../../service/user/user.service';
 import { UserDetailViewModel } from '../user-details.vm';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
+import { ListenerService } from '../../service/listener/listener.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

@@ -1,9 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewUserComponent } from './user-view.component';
-import { UsersModelBuilder } from 'src/app/project-manager/service/user/user-model.builder';
-import { ListenerService } from 'src/app/project-manager/service/listener/listener.service';
-import { UserService } from 'src/app/project-manager/service/user/user.service';
+import { UsersModelBuilder } from '../../service/user/user-model.builder';
+import { ListenerService } from '../../service/listener/listener.service';
+import { UserService } from '../../service/user/user.service';
 import { of } from 'rxjs';
 
 describe('ViewUserComponent', () => {
